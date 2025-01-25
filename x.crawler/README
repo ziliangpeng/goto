@@ -1,0 +1,12 @@
+multi process / component architecture
+
+
+- seeder: manually add url into db
+- crawler: ask for url (urls) (from dispathcer) and fetch contet for the url, write raw content back to db
+    - ue golang, for massive parallel http fetching.
+- dispatcher: responsible for giving out unvisited urls when requested. responsible for balancing traffic to different sites based on ongoing work
+    - may also implicitly act as a queueing system
+- processor: responsible for processing raw content, extract urls, and add them to db. may use rust to implement.
+- db: storage. may need a CRUD service on top.
+    - sharding can happen here
+- frontend: UI for displaying status, progress, etc.
