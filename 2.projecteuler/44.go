@@ -40,5 +40,5 @@ func main() {
 		}
 		return ans_b - ans_a
 	}()
-	fmt.Println("Answer:", ans)
+	fmt.Println(ans)
 }

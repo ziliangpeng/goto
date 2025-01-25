@@ -18,5 +18,5 @@ func main() {
 		}
 	}
 	fmt.Println("Found ", len(primes), " primes")
-	fmt.Println("The 10001st prime is ", primes[len(primes)-1])
+	fmt.Println(primes[len(primes)-1])
 }

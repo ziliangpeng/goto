@@ -24,5 +24,5 @@ func main() {
 			largest = product
 		}
 	}
-	fmt.Println("Largest product:", largest)
+	fmt.Println(largest)
 }

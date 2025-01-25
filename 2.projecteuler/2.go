@@ -21,5 +21,5 @@ func main() {
 			sum += v
 		}
 	}
-	fmt.Println("Answer is", sum)
+	fmt.Println(sum)
 }

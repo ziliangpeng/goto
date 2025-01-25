@@ -16,5 +16,5 @@ func main() {
 			break
 		}
 	}
-	fmt.Println("Answer is", num)
+	fmt.Println(num)
 }
